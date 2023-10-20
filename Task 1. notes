@@ -1,0 +1,174 @@
+QUESTION 1
+
+Write a blog on Difference between HTTP1.1 vs HTTP2
+
+In the ever-evolving landscape of the internet, web technologies continue to advance to 
+make our online experiences faster, more efficient, and more secure. One significant
+evolution in this realm is the transition from HTTP/1.1 to HTTP/2. In this blog, we'll explore the 
+key differences between these two HTTP protocols and how HTTP/2 has revolutionized web
+
+Defination of the HTTP
+
+HTTP, or Hypertext Transfer Protocol, is the foundation of data communication on the World 
+Wide Web. It governs the way data is requested and presented on websites. In essence, it is
+the language web browsers and servers use to communicate with each other.
+
+Difference between HTTP/1.1 and HTTP.
+
+1.multiplexing
+
+HTTP/1.1: In HTTP/1.1, only one request can be outstanding on a connection at a time. This 
+means that if a browser wants to load multiple resources (like HTML, CSS, JavaScript, and
+images), it has to open multiple connections, each processing one request at a time. This 
+leads to inefficiencies and increased latency.
+
+HTTP/2: HTTP/2 introduces multiplexing, allowing multiple requests and responses to be 
+sent and received in parallel on a single connection. This eliminates the need for multiple
+connections, reducing latency and improving overall performance. It effectively removes
+the head-of-line blocking problem associated with HTTP/1.1.
+
+2.Binary Protocol
+
+HTTP/1.1: HTTP/1.1 uses a text-based protocol, which is easy for humans to read but less 
+efficient for machines to process. This results in larger message sizes and more processing
+overhead.
+
+HTTP/2: HTTP/2 uses a binary protocol, which is more efficient for both parsing and 
+processing. Binary encoding leads to smaller message sizes and faster data transfer,
+reducing overhead.
+
+3.Compatibility with HTTPS
+
+HTTP/1.1: While HTTP/1.1 can be used with HTTPS (HTTP Secure), it's not optimized for it.
+
+HTTP/2: HTTP/2 is designed to work seamlessly with HTTPS and is often recommended for
+use with secure websites. This enhances security and data privacy.
+
+
+Summary:
+
+HTTP/2 is a significant improvement over HTTP/1.1 in terms of speed, efficiency, 
+and performance. Its use of multiplexing, binary encoding, header compression,
+prioritization, and server push makes it a better choice for modern websites. However, the 
+adoption of HTTP/2 depends on server and browser support, so website administrators 
+need to ensure compatibility before transitioning to the new protocol.
+
+
+
+
+
+QUESTION 2
+
+Write a blog about objects and its internal representation in Javascript
+
+Objects in JavaScript:
+
+In JavaScript, an object is a complex data type that allows you to store and organize data in a 
+structured way. Objects can contain properties and methods, making them a versatile tool 
+for representing real-world entities and concepts in your code. Objects are at the core of the
+language, and they play a pivotal role in building software, including web applications.
+
+Example for Objects:
+
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  age: 30,
+  isEmployed: true,
+  greet: function() {
+    console.log("Hello!");
+  }
+};
+
+In this example, person is an object with several properties, including 'firstName',
+ 'lastName;, 'age', 'isEmployed', and a method 'greet'. Each property has a name (key)
+ and a value.
+
+ Working with Objects in JavaScript:
+
+ Creating Objects: You can create objects using object literals, constructors, or by defining 
+ classes (introduced in ECMAScript 6)
+
+ Accessing Properties: You can access object properties using dot notation or bracket 
+ notation.
+
+ Example:
+
+ const name = person.firstName; // Using dot notation
+const age = person['age'];      // Using bracket notation
+
+Modifying Properties: You can change the values of object properties and add new 
+properties.
+
+Iterating Over Properties: You can loop through an object's properties using 'for...in'
+loops or the 'object.keys()'and 'object.entries()'methods.
+
+Prototypes and Inheritance: You can create objects that inherit properties and methods 
+from other objects using prototypes or classes.
+
+
+
+
+
+
+QUESTION 3
+
+Read about IP address, port, HTTP methods, MAC address
+
+1. IP Address (Internet Protocol Address):
+
+An IP address is a unique numerical label assigned to each device connected to a computer 
+network that uses the Internet Protocol for communication. It serves two primary functions:
+
+Host or Network Identification: It identifies the host or network interface and its location on 
+the network.
+
+Routing: It allows data to be routed from one network to another, enabling devices to 
+communicate across the internet.
+
+IP addresses can be of two types: IPv4 (32-bit) and IPv6 (128-bit). IPv4 addresses are most 
+common, but IPv6 addresses are becoming more prevalent due to the exhaustion of
+available IPv4 addresses.
+
+
+2. Port:
+
+In networking, a port is a communication endpoint used to identify a specific process or 
+service running on a device in a network. Ports are essential for enabling multiple network
+services on a single device. Ports are identified by numbers ranging from 0 to 65,535 and are 
+categorized into well-known ports (0-1023), registered ports (1024-49151), and dynamic or 
+private ports (49152-65535). When data is sent to a device, the combination of an IP address 
+and a port number directs the data to the specific service or application on that device.
+
+
+3. HTTP Methods (Hypertext Transfer Protocol Methods):
+
+HTTP is the foundation of data communication on the World Wide Web. It uses a set of 
+request methods, also known as HTTP methods, to indicate the desired action to be
+performed on a resource. The most common HTTP methods include:
+
+* GET: Retrieve data from the server.
+* POST: Submit data to be processed to a specified resource.
+* PUT: Update a resource or create a new one if it doesn't exist.
+* DELETE: Remove a resource.
+* HEAD: Retrieve response headers (similar to GET but without the actual data).
+* PATCH: Apply partial modifications to a resource.
+* OPTIONS: Retrieve information about the communication options for the target resource.
+* CONNECT: Establish a network connection to a resource.
+
+These methods help web browsers and servers communicate effectively to retrieve or
+manipulate resources like web pages, images, and other data on the internet.
+
+
+4. MAC Address (Media Access Control Address):
+
+A MAC address is a unique hardware address assigned to each network interface card (NIC)
+or network adapter. It is primarily used in local area networks (LANs) to identify and 
+communicate with devices on the same network segment. MAC addresses are 48 bits (12 
+hexadecimal digits) for most devices.
+
+MAC addresses are used in Ethernet and Wi-Fi networks for data link layer communication. 
+They are typically burned into the hardware of the network adapter during manufacturing 
+and are used for low-level network communication. Unlike IP addresses, which can change 
+or be reassigned, MAC addresses are usually static and unique to each network interface.
+
