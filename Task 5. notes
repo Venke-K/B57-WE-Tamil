@@ -1,0 +1,122 @@
+
+
+QUESTION 1.
+
+Write a “person” class to hold all the details.
+
+class Person {
+  constructor(firstName, lastName, age, gender, email) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.age = age;
+    this.gender = gender;
+    this.email = email;
+  }
+
+  getFullName() {
+    return `${this.firstName} ${this.lastName}`;
+  }
+
+  getAge() {
+    return this.age;
+  }
+
+  getGender() {
+    return this.gender;
+  }
+
+  getEmail() {
+    return this.email;
+  }
+
+  setFirstName(firstName) {
+    this.firstName = firstName;
+  }
+
+  setLastName(lastName) {
+    this.lastName = lastName;
+  }
+
+  setAge(age) {
+    this.age = age;
+  }
+
+  setGender(gender) {
+    this.gender = gender;
+  }
+
+  setEmail(email) {
+    this.email = email;
+  }
+}
+
+// Create a person object
+const person = new Person("John", "Doe", 30, "Male", "johndoe@email.com");
+
+// Access and update properties
+console.log("Full Name:", person.getFullName());
+console.log("Age:", person.getAge());
+console.log("Gender:", person.getGender());
+console.log("Email:", person.getEmail());
+
+// Update the first name and age
+person.setFirstName("Jane");
+person.setAge(28);
+
+console.log("Updated Full Name:", person.getFullName());
+console.log("Updated Age:", person.getAge());
+
+
+
+QUESTION 2.
+
+GITHUB LINK TASK.
+
+Class movie.
+
+a. Write a constructor for the class Movie, which takes a String representing the title of the movie,
+   a String representing the studio, and a String representing the rating as its arguments, and sets the 
+   respective class properties to these values.
+
+
+
+   class Movie {
+  constructor(title, studio, rating) {
+    this.title = title;
+    this.studio = studio;
+    this.rating = rating;
+  }
+}
+
+// Create a Movie instance
+const movie1 = new Movie("Inception", "Warner Bros.", "PG-13");
+const movie2 = new Movie("The Shawshank Redemption", "Castle Rock Entertainment", "R");
+
+console.log("Movie 1:", movie1);
+console.log("Movie 2:", movie2);
+
+
+b. The constructor for the class Movie will set the class property rating to "PG" as default when no rating is provided.
+
+
+
+   class Movie {
+  constructor(title, studio, rating = "PG") {
+    this.title = title;
+    this.studio = studio;
+    this.rating = rating;
+  }
+}
+
+// Create Movie instances with and without a rating provided
+const movie1 = new Movie("Inception", "Warner Bros.");
+const movie2 = new Movie("The Shawshank Redemption", "Castle Rock Entertainment", "R");
+
+console.log("Movie 1:", movie1); // Rating will be "PG" by default
+console.log("Movie 2:", movie2); // Rating is explicitly set to "R"
+
+
+
+
+
+
