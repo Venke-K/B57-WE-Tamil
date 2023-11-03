@@ -1,0 +1,157 @@
+Question 1.
+
+For the given JASON iterate over all for loops(for, for in , for of, for each)
+
+We can iterate over its properties and values using various types of loops and methods
+
+assume that  following JSON object:
+
+var data = {
+  "name": "John",
+  "age": 30,
+  "city": "New York"
+};
+
+
+Using a for...in loop to iterate over the keys:
+
+for (var key in data) {
+  console.log(key, data[key]);
+}
+
+
+OUTPUT:
+
+name John
+ age 30
+city New York
+
+
+Using a for...of loop to iterate over the values:
+
+for (var value of Object.values(data)) {
+  console.log(value);
+}
+
+
+OUTPUT:
+John
+30
+Mew York
+
+
+If you're using a library like Lodash, you can use its _.forEach function:
+
+
+Doubt unbale to get the outpout ,
+will reach mentor or Raise query 
+
+QUESTION 2.
+
+Create you own resume data in JSON format:
+
+let myResume={
+    "basics": {
+      "name": "VENKATESAN K",
+      "email": "venkatjp62@gamil.com",
+      "phone": 1234567890,
+      "degree": "BCA",
+      "location": {
+        "address": "No 56/A VAIGAI STREET AMBATTUR",
+        "postalCode": 600053,
+        "city": "Chennai",
+        "state": "Tamilnadu",
+        "country": "India"
+      },
+      "profiles": [
+        {
+          "website": "https://www.linkedin.com/in/venkat-jp-01b6311a0/",
+          "github":"https://github.com/venkatjp62"
+        }
+      ]
+    },
+    "work": [
+      {
+        "company": "GUARDIAN LIFE INSURANCE",
+        "position": "ASSOCIATE",
+        "startDate": "04/28/2021",
+        "endDate": "Currenlty working",
+        "summary": "i am the Associate handling various task and gaining lots of experience",
+      },
+    ],
+    "education": [
+      {
+        "institution": "SRM University ",
+        "department": "Computer Applications",
+        "studyType": "fulltime",
+        "batch start year": 2017,
+        "batch end year": 2020,
+        "gpa": 7.5,
+      }
+    ],
+    "skills": [
+      {
+        "name": "python,javascript",
+        "level": "beginer",
+        "project": [
+          "automatic attendance maintaing system using python language"
+        ]
+      }
+    ],
+    "languages": [
+      {
+        "language": "Tamil,Enlish",
+      }
+    ],
+    "interests": [
+      {
+        "name": "script writter,youtuber,",
+      }
+    ]
+  }
+  console.log(myResume);
+  
+
+
+  QUESTION 3. 
+
+  Read about the difference between Windows, screen and document in javascript.
+
+  (i)  Windows object:
+
+     a. The 'window' object represents the global browser window or tab that contains the web page.
+     b. It is the top-level object in the browser's object model and serves as the global context 
+     for JavaScript code running in a web page.
+     c.You can access and manipulate properties and methods related to the browser window, 
+     such as opening new windows, setting timers, and handling events.
+     d. You can also define global variables and functions in the context of the window object.
+
+     Example:
+
+     window.alert("This is an alert");
+     window.location.href = "https://www.example.com";
+
+
+(ii) Screen object:
+
+    a.The 'screen' object represents the user's screen or monitor and provides information about the screen's properties.
+    b.It offers details like screen width, height, color depth, and pixel density (DPI).
+    c.You can use the 'screen' object to adjust the layout or behavior of your web page based on 
+    the user's screen characteristics.
+
+    Example:
+
+    console.log("Screen width: " + screen.width);
+    console.log("Screen height: " + screen.height);
+
+ (iii) Document object:
+
+    a. The 'document' object represents the DOM (Document Object Model) of the current web page.
+    b. It allows you to access and manipulate the HTML content, structure, and elements of the page.
+    c.  You can use the 'document' object to modify the content, create or remove elements, respond to events,
+        and interact with the web page's structure and layout.
+    d. It's a critical object for working with HTML and JavaScript in the context of a web page.    
+
+
+
+
